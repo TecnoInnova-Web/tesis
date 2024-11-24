@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
+    <link rel="icon" href="{{ asset('img/logo.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('img/logo.png') }}" type="image/x-icon">
     <title>@yield('title', 'Inicio')</title>
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
@@ -40,13 +41,15 @@
 
     <main class="flex-grow">
         <div class="bg-white py-10">
-            <div class="container mx-auto flex justify-center text-center">
+            <div class="container mx-auto flex flex-col items-center text-center">
                 <div>
-                    <h2 class="text-2xl font-bold ">Bienvenidos</h2>
+                    <h2 class="text-2xl font-bold">Bienvenidos</h2>
                     <p>Conoce los Horarios De Las rutas</p>
                 </div>
+                <!-- Contador de visitas -->
             </div>
         </div>
+        
 
         <div class="container mx-auto p-8">
             <h1 class="text-3xl font-bold mb-4 text-navy">Horarios de hoy: <br>{{ $today->format('d/m/Y') }}</h1>
@@ -113,7 +116,7 @@
         </div><br>
 
     </main>
-
+    
     @include('layouts.footer')
 
     <script>

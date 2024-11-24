@@ -1,6 +1,7 @@
 <footer class="bg-white text-black">
     <div class="container mx-auto flex flex-col md:flex-row justify-between items-center p-6">
         <div class="text-left flex-1">
+
             <h2 class="text-2xl font-bold">Instituto Universitario de Tecnología READIC "Unir"</h2>
             <p class="text-lg"></p>
             <p class="mt-2 text-lg">Sede 5 de Julio</p>

@@ -65,10 +65,5 @@
             </div>
         </div>
     </div>
-    @if(isset($image) && $image->path)
-    <div class="mt-6">
-        <h2 class="text-xl font-semibold">Imagen Subida:</h2>
-        <img src="{{ asset('img/' . $image->path) }}" alt="Imagen subida" class="mt-2 border rounded shadow-lg" />
-    </div>
-@endif
+   
 </x-app-layout>

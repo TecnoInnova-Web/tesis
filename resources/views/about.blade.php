@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="icon" href="{{asset('img/camion.png')}}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('img/logo.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('img/logo.png') }}" type="image/x-icon">
     <title>@yield('title', 'Acerca de ')</title>
     <link rel="preconnect" href="">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
@@ -138,20 +139,22 @@
             <h1 class="text-3xl font-bold mb-6 text-center">Ruta De Viaje</h1>
             <div class="flex justify-center mt-8">
                 <div class="bg-white shadow-lg rounded-lg p-10 max-w-3xl text-center">
-                    <img src="{{ asset('img/ruta.jpg') }}" alt="Descripción de la imagen" class="w-full h-120 object-cover rounded-lg mb-4">
+                    <img src="{{ asset('img/ruta.webp') }}" alt="Descripción de la imagen" class="w-full h-120 object-cover rounded-lg mb-4">
                     <p class="mt-4">Este es la ruta desde La Cañada de Urdaneta hacia Maracaibo.</p>
                 </div>
             </div>
         </div><br><br><br>
 
-        {{-- <div class="max-w-7xl mx-auto mt-9 ">
-            <h1 class="text-3xl font-bold mb-6 text-center">Carrousel de Imagenes</h1>
-            <div class="flex justify-center mt-8">
-                @include('components.carrusel')
-            </div>
-        </div><br><br><br>
-     
-             --}}
+        <div class="max-w-7xl mx-auto mt-9 ">
+        <h1 class="text-3xl font-bold mb-6 text-center">Anexos</h1>
+        <div class="flex justify-center mt-8">
+            <div class="bg-white shadow-lg rounded-lg p-10 text-center">
+            @include('components.carrusel')
+        </div>
+
+        </div>
+    </div><br><br><br>
+ 
         
     </main>
 
