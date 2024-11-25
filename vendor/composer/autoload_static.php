@@ -652,16 +652,6 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         ),
     );
 
-    public static $prefixesPsr0 = array (
-        'C' => 
-        array (
-            'Carbon' => 
-            array (
-                0 => __DIR__ . '/..' . '/carbondate/carbon/src',
-            ),
-        ),
-    );
-
     public static $classMap = array (
         'App\\Console\\Commands\\BackupDatabase' => __DIR__ . '/../..' . '/app/Console/Commands/BackupDatabase.php',
         'App\\Http\\Controllers\\Auth\\AuthenticatedSessionController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/AuthenticatedSessionController.php',
@@ -677,22 +667,28 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         'App\\Http\\Controllers\\ConductorController' => __DIR__ . '/../..' . '/app/Http/Controllers/ConductorController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HorarioController' => __DIR__ . '/../..' . '/app/Http/Controllers/HorarioController.php',
+        'App\\Http\\Controllers\\ImageController' => __DIR__ . '/../..' . '/app/Http/Controllers/ImageController.php',
         'App\\Http\\Controllers\\PreguntaController' => __DIR__ . '/../..' . '/app/Http/Controllers/PreguntaController.php',
         'App\\Http\\Controllers\\ProfileController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProfileController.php',
         'App\\Http\\Controllers\\PublicsController' => __DIR__ . '/../..' . '/app/Http/Controllers/PublicsController.php',
         'App\\Http\\Controllers\\SearchController' => __DIR__ . '/../..' . '/app/Http/Controllers/SearchController.php',
         'App\\Http\\Controllers\\Users' => __DIR__ . '/../..' . '/app/Http/Controllers/Users.php',
+        'App\\Http\\Middleware\\SetLocale' => __DIR__ . '/../..' . '/app/Http/Middleware/SetLocale.php',
         'App\\Http\\Requests\\Auth\\LoginRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Auth/LoginRequest.php',
         'App\\Http\\Requests\\AutobusRequest' => __DIR__ . '/../..' . '/app/Http/Requests/AutobusRequest.php',
         'App\\Http\\Requests\\ConductorRequest' => __DIR__ . '/../..' . '/app/Http/Requests/ConductorRequest.php',
         'App\\Http\\Requests\\HorarioRequest' => __DIR__ . '/../..' . '/app/Http/Requests/HorarioRequest.php',
+        'App\\Http\\Requests\\ImageRequest' => __DIR__ . '/../..' . '/app/Http/Requests/ImageRequest.php',
+        'App\\Http\\Requests\\ImageneRequest' => __DIR__ . '/../..' . '/app/Http/Requests/ImageneRequest.php',
         'App\\Http\\Requests\\PreguntaRequest' => __DIR__ . '/../..' . '/app/Http/Requests/PreguntaRequest.php',
         'App\\Http\\Requests\\ProfileUpdateRequest' => __DIR__ . '/../..' . '/app/Http/Requests/ProfileUpdateRequest.php',
         'App\\Models\\Autobus' => __DIR__ . '/../..' . '/app/Models/Autobus.php',
         'App\\Models\\Conductor' => __DIR__ . '/../..' . '/app/Models/Conductor.php',
         'App\\Models\\Horario' => __DIR__ . '/../..' . '/app/Models/Horario.php',
+        'App\\Models\\Image' => __DIR__ . '/../..' . '/app/Models/Image.php',
         'App\\Models\\Pregunta' => __DIR__ . '/../..' . '/app/Models/Pregunta.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
+        'App\\Models\\Visit' => __DIR__ . '/../..' . '/app/Models/Visit.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\View\\Components\\AppLayout' => __DIR__ . '/../..' . '/app/View/Components/AppLayout.php',
         'App\\View\\Components\\GuestLayout' => __DIR__ . '/../..' . '/app/View/Components/GuestLayout.php',
@@ -7750,7 +7746,6 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423::$classMap;
 
         }, null, ClassLoader::class);
